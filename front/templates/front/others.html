@@ -1,0 +1,45 @@
+{% extends 'front/main.html' %}
+{% load static %}
+
+{% block style %}
+<style type="text/css">
+body{
+  overflow-y: hidden;
+}
+</style>
+{% endblock %}
+
+{% block content %}
+
+
+<div class=" my-5 container d-flex justify-content-center align-items-center">
+<form class="col-md-6" method="POST">
+  {% csrf_token %}
+  <h2>Need Help? Reach Us.</h2>
+  <div class="col-md-6 my-2">
+    <label for="yourname" class="form-label">Name</label>
+    <input type="text" class="form-control" name="name" id="yourname">
+  </div>
+  <div class="col-md-6 my-2">
+    <label for="email" class="form-label">Email</label>
+    <input type="email" class="form-control" name="email" id="email">
+  </div>
+
+<div class="col-md-6 my-2">
+    <label for="mob" class="form-label">Mobile No</label>
+    <input type="text" class="form-control" id="mob" name="mobile_no">
+  </div>
+
+<div class="col-md-6 my-2">
+    <label for="address" class="form-label">Address</label>
+    <input type="text" class="form-control" name="address" id="address">
+  </div>
+
+<div class="col-md-6 my-2">
+    <label for="query" class="form-label">Your Query</label>
+    <input type="textarea" class="form-control" name="query" id="query">
+  </div>
+<button class="col-md-2 my-4 btn btn-primary" type="submit">Submit</button> 
+</form>
+</div>
+{% endblock %}

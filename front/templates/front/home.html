@@ -1,0 +1,30 @@
+{% extends 'front/main.html' %}
+{% load static %}
+{% block style %}
+
+	<link rel="stylesheet" type="text/css" href="{% static 'front/css/homepage.css' %}">
+
+{% endblock %}
+
+{% block content %}
+
+<div class="outercontainer" style="background: url('{% static 'front/images/hl.jpg' %}');background-size: cover; background-position: center center; background-repeat: no-repeat;">
+    <div class="container" style="color: black;">
+        <div class="upper1">
+            <!-- <img src="{% static 'front/images/2.jpg'%}" class="image"> -->
+        </div>
+        <div class="upper2">
+            <div class="title">
+                <h1>Easy Loans</h1>
+            </div>
+            <div class="subtitle">
+                <h3>get your loans with local guidance</h3>
+            </div>
+            <div class="para">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis voluptate hic tenetur. Reprehenderit, facere reiciendis.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock%}

@@ -1,0 +1,88 @@
+{% extends 'front/main.html' %}
+{% load static %}
+
+{% block style %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'front/css/homepage.css' %}">
+
+{% endblock %}
+
+{% block content %}
+
+
+<div class=" m-4 text-center d-flex justify-content-center align-items-center">
+<div class="card mb-3" style="max-width: 50rem;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="{% static 'front/images/3.jpg' %}" class="img-fluid rounded-start" alt="..." style="width: 35vw;height: 31vh;">
+    </div>
+  
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Home Loan</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <a href="{% url 'homeloan' %}" style="text-decoration: none; color: black;">
+        <p class="card-text"><small class="text-info">CLICK HERE</small></p></a>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class=" m-4 text-center d-flex justify-content-center align-items-center">
+<div class="card mb-3" style="max-width: 50rem;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="{% static 'front/images/property.jpg' %}" class="img-fluid rounded-start image" alt="..." style="width: 35vw;height: 31vh;">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Loan against properties</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <a href="{% url 'laptype' 'salaried' %}" style="text-decoration: none; color: black;">
+        <p class="card-text"><small class="text-info">SALARIED</small></p></a>
+        <a href="{% url 'laptype' 'selfemployed' %}" style="text-decoration: none; color: black;">
+        <p class="card-text"><small class="text-info">SELF EMPLOYED</small></p></a>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class=" m-4 text-center d-flex justify-content-center align-items-center ">
+<div class="card mb-3" style="max-width: 50rem;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="{% static 'front/images/business.jpg' %}" class="img-fluid rounded-start" alt="..." style="width: 35vw; height: 31vh;"> 
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Business Loan</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <p class="card-text"><small class="text-muted"><a href="{% url 'businessloan' %}">click here</a></small></p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<div class=" m-4 text-center d-flex justify-content-center align-items-center ">
+<div class="card mb-3" style="max-width: 50rem;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="{% static 'front/images/per1.jpg' %}" class="img-fluid rounded-start" alt="..." style="width: 35vw;height: 31vh;">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Personal Loan</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <p class="card-text"><small class="text-muted"><a href="{% url 'pl' %}">Click here</a></small></p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+{% endblock%}

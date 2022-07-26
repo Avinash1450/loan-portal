@@ -1,0 +1,46 @@
+
+
+body{
+     margin: 0;
+     padding: 0;
+     overflow-x: hidden;
+ }
+.outercontainer{
+    display: flex;
+    width: 100vw;
+    height: 91vh;
+    justify-content: center;
+    align-items: center;
+    box-sizing:content-box;
+}
+.container{
+    width: 70vw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.upper1{
+   
+    margin: auto;
+}
+.image{
+   
+    width: 20vw;
+    height: auto;
+}
+.upper2{
+    font-size: 2vw;
+}
+.title{
+
+}
+.subtitle{
+
+
+}
+.para{
+
+}
+.backimage{
+    border: 2px solid red;
+}
